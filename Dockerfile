@@ -1,5 +1,6 @@
 FROM ruby
 RUN apt -y update && \
+    apt -y upgrade && \
     apt -y install libicu-dev cmake python-docutils && \
     rm -rf /var/lib/apt/lists/*
 RUN gem install github-linguist
