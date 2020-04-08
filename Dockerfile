@@ -7,6 +7,7 @@ RUN gem install gollum
 RUN gem install commonmarker
 RUN gem install asciidoctor
 RUN gem install org-ruby
+COPY config.rb /
 WORKDIR /wiki
-ENTRYPOINT ["gollum", "--port", "8080", "--allow-uploads", "page", "--mathjax", "--h1-title", "--user-icons", "gravatar"]
+ENTRYPOINT ["gollum", "--config", "/config.rb", "--port", "8080", "--allow-uploads", "page", "--mathjax", "--h1-title", "--user-icons", "gravatar"]
 EXPOSE 8080
