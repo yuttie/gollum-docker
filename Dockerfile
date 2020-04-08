@@ -1,6 +1,6 @@
 FROM ruby
-RUN apt-get -y update && \
-    apt-get -y install libicu-dev cmake python-docutils && \
+RUN apt -y update && \
+    apt -y install libicu-dev cmake python-docutils && \
     rm -rf /var/lib/apt/lists/*
 RUN gem install github-linguist
 RUN gem install gollum
