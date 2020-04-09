@@ -4,5 +4,5 @@ docker run --name=gollum \
            --restart=unless-stopped \
            -v $(pwd):/wiki \
            -u $(id -u $USER):$(id -g $USER) \
-           -p 4567:8080 \
+           -p 4567:4567 \
            gollum
