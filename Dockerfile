@@ -11,5 +11,5 @@ RUN gem install org-ruby
 COPY config.rb /
 ENV LANG C.UTF-8
 WORKDIR /wiki
-ENTRYPOINT ["gollum", "--config", "/config.rb", "--allow-uploads", "page", "--mathjax", "--h1-title", "--user-icons", "gravatar"]
+ENTRYPOINT ["gollum", "--config", "/config.rb", "--bare", "--allow-uploads", "page", "--mathjax", "--h1-title", "--user-icons", "gravatar"]
 EXPOSE 4567
