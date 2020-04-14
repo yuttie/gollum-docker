@@ -15,5 +15,5 @@ RUN sed -i.orig \
 COPY config.rb /
 ENV LANG C.UTF-8
 WORKDIR /wiki
-ENTRYPOINT ["gollum", "--config", "/config.rb", "--bare", "--allow-uploads", "page", "--mathjax", "--h1-title", "--user-icons", "gravatar"]
+ENTRYPOINT ["gollum", "--config", "/config.rb", "--css", "--js", "--bare", "--allow-uploads", "page", "--mathjax", "--h1-title", "--user-icons", "gravatar"]
 EXPOSE 4567
