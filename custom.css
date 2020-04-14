@@ -1,0 +1,17 @@
+#head {
+  padding: 0 1.5em;
+}
+
+#wiki-content {
+  padding: 0 1.5em;
+}
+
+.markdown-body {
+  font-family: sans-serif;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body tt {
+  font-family: monospace;
+}
